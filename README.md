@@ -1,32 +1,33 @@
 # Supermarket_Management_DB
 
-A Python–SQLite based supermarket management system simulating initialization, sales/supply actions, and data queries via command-line scripts.
+## Overview
+This project implements a database-driven simulation system for managing a supermarket chain. It handles employees, suppliers, branches, products, and dynamic activity logs such as sales and deliveries, all using a command-line interface and a SQLite database.
 
+## Features
+- Initialize a complete supermarket database from configuration files.
+- Execute business actions such as sales and restocking via input files.
+- Persistent SQLite storage with multiple interconnected tables.
+- Utility scripts to print the current state of the database.
 
-## How to Run
+## Build and Run
 
-1. **Initialize the DB**  
-   ```bash
-   python3 initiate.py config.txt
-   ```
+### Requirements
+- Python 3.7+
+- `sqlite3` (pre-installed in most environments)
 
-2. **Process Actions**  
-   ```bash
-   python3 action.py action.txt
-   ```
+### Run Initialization
+```bash
+python3 initiate.py config.txt
+```
 
-3. **Print Tables**  
-   ```bash
-   python3 printdb.py
-   ```
+### Run Actions
+```bash
+python3 action.py action.txt
+```
 
-## About
+### View Database State
+```bash
+python3 printdb.py
+```
 
-This project was submitted as Assignment 4 in the System Programming Lab course at Ben-Gurion University.  
-It demonstrates structured DB design, persistence logic, and scripted automation for a simplified supermarket system.
-
-## Author
-
-**Stav Balaish**  
-Computer Science B.Sc., Ben-Gurion University  
-stavbalaish2000@gmail.com
+All files (`config.txt`, `action.txt`, etc.) must be placed in the root directory for proper execution.
